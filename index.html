@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript" src="deps/bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="deps/bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="deps/clg/clg.js"></script>
+<script type="text/javascript" src="deps/clg/clg-directive.js"></script>
+<script type="text/javascript">
+cloudlog({
+    name: 'splasher',
+    defaultUri: '/welcome',
+    route: {
+        '/welcome': 'welcome.html',
+        // '/timeline': 'timeline.html',
+        // '/search/:searchStr': 'search.html',
+    },
+    templates: {
+    },
+});
+</script>
+<clg-namespace name="/splasher" alias="s"></clg-namespace>
+
+</head>
+<body ng-app="splasher" ng-controller="CloudlogCtrl">
+    <!--<form action="{{url('search', [searchStr])}}">
+        <input placeholder="Something to search for..." ng-model="searchStr"/>
+    </form> -->
+    
+    <div ng-view></div>
+</body>
+</html>

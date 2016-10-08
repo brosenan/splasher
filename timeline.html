@@ -1,0 +1,27 @@
+<!--<h1>{{$session.user}}'s Timeline</h1>-->
+<!--<form>
+    <input placeholder="Say something" ng-model="text"/>
+    <clg-fact pattern="s:tweeted(s:user(User), Text, Time)" 
+        name="tweet" 
+        assign="User: $session.user, Time: now(), Text: text">
+    </clg-fact>
+    <input type="submit" value="Tweet!" ng-click="add_tweet(); text=''"/>
+</form>-->
+
+<!--<form>
+    <input placeholder="Whom to follow" ng-model="other"/>
+    <clg-fact pattern="s:follows(s:user(Me), s:user(Other))" 
+        name="following" 
+        assign="Me: $session.user, Other: other">
+    </clg-fact>
+    <input type="submit" value="Follow!" ng-click="add_following(); other=''"/>
+</form>-->
+
+<!--<ul>
+    <clg-query goal="s:timeline(s:user(Me), s:tweeted(s:user(Author), Text), Time)" 
+        assign="Me: $session.user" to="timeline">
+    </clg-query>
+    <li ng-repeat="event in timeline | orderBy: event.Time:true">
+        {{event.Author}}: {{event.Text}}
+    </li>
+</ul>-->
